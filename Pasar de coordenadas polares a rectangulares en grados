@@ -1,0 +1,24 @@
+#incluir <iostream>
+#incluir <matemáticas>
+
+utilizando el espacio de nombres estándar;
+
+int principal()
+{
+    float r, theta_degrees, theta_radianes, x, y;
+    
+    cout << "Introduce el valor de r: ";
+    cin >> r;
+    
+    cout << "Introduce el valor de theta en grados: ";
+    cin >> theta_grados;
+    
+    theta_radianes = theta_grados * M_PI / 180.0;
+    
+    x = r * cos(theta_radianes);
+    y = r * sin(theta_radianes);
+    
+    cout << "Las coordenadas rectangulares son: (" << x << ", " << y << ")" << endl;
+    
+    devolver 0;
+}
