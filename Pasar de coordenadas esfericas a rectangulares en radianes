@@ -1,0 +1,26 @@
+#incluir <iostream>
+#include <cmath> // Necesitamos esta librería para usar las funciones sin(), cos() y sqrt()
+
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    doble rho, theta, phi, x, y, z;
+    
+    // Pedimos al usuario que ingrese las coordenadas esféricas en radianes
+    cout << "Ingrese la coordenada rho: ";
+    cin >> ro;
+    cout << "Ingrese la coordenada theta en radianes: ";
+    cin >> theta;
+    cout << "Ingrese la coordenada phi en radianes: ";
+    cin >> fi;
+    
+    // Calculamos las coordenadas rectangulares
+    x = rho * sin(phi) * cos(theta);
+    y = rho * sin(phi) * sin(theta);
+    z = rho * cos(fi);
+    
+    // Imprimimos las coordenadas rectangulares en la pantalla
+    cout << "Coordenadas rectangulares: (x, y, z) = (" << x << ", " << y << ", " << z << ")" << endl;
+    
+    devolver 0;
+}
