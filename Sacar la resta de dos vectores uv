@@ -1,0 +1,34 @@
+#incluir <iostream>
+#include <vector> // Necesitamos esta librería para usar vectores
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    vector<doble> u(3), v(3), resta(3);
+    
+    // Pedimos al usuario que ingrese los elementos de los vectores
+    cout << "Ingrese los elementos del vector u:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> u[i];
+    }
+    cout << "Ingrese los elementos del vector v:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> v[i];
+    }
+    
+    // Calculamos la resta de los vectores
+    para(int i = 0; i < 3; i++) {
+        resta[i] = u[i] - v[i];
+    }
+    
+    // Imprimimos la resta en la pantalla
+    cout << "La resta de los vectores uyv es: (";
+    para(int i = 0; i < 3; i++) {
+        cout << resta[yo];
+        if(i != 2) cout << ", ";
+    }
+    cout << ")" << endl;
+    
+    devolver 0;
+}
