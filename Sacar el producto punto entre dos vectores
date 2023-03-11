@@ -1,0 +1,30 @@
+#incluir <iostream>
+#include <vector> // Necesitamos esta librería para usar vectores
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    vector<doble> v1(3), v2(3);
+    doble productoPunto = 0.0;
+    
+    // Pedimos al usuario que ingrese los elementos de los vectores
+    cout << "Ingrese los elementos del primer vector:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> v1[i];
+    }
+    cout << "Ingrese los elementos del segundo vector:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> v2[i];
+    }
+    
+    // Calculamos el producto punto
+    para(int i = 0; i < 3; i++) {
+        productoPunto += v1[i] * v2[i];
+    }
+    
+    // Imprimimos el producto punto en la pantalla
+    cout << "El producto punto entre los dos vectores es: " << productoPunto << endl;
+    
+    devolver 0;
+}
