@@ -1,0 +1,27 @@
+#incluir <iostream>
+#include <cmath> // Necesitamos esta librería para usar la función atan2() y la constante PI
+
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    doble x, y, z, rho, theta_deg, phi_deg;
+    const doble PI = 3.14159265358979323846; // Definimos la constante PI
+    
+    // Pedimos al usuario que ingrese las coordenadas rectangulares en grados
+    cout << "Ingrese la coordenada x: ";
+    cin >> x;
+    cout << "Ingrese la coordenada y: ";
+    cin >> y;
+    cout << "Ingrese la coordenada z: ";
+    cin >> z;
+    
+    // Calculamos las coordenadas esféricas
+    rho = sqrt(x*x + y*y + z*z);
+    theta_deg = atan2(y, x) * 180.0 / PI;
+    phi_deg = atan2(sqrt(x*x + y*y), z) * 180.0 / PI;
+    
+    // Imprimimos las coordenadas esféricas en la pantalla
+    cout << "Coordenadas esféricas: (rho, theta, phi) = (" << rho << ", " << theta_deg << " grados, " << phi_deg << " grados)" << endl;
+    
+    devolver 0;
+}
