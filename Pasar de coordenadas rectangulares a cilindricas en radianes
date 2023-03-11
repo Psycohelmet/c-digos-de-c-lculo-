@@ -1,0 +1,26 @@
+#incluir <iostream>
+#include <cmath> // Necesitamos esta librería para usar la función atan2()
+
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    doble x, y, z, r, theta, z_cilindricas;
+    
+    // Pedimos al usuario que ingrese las coordenadas rectangulares
+    cout << "Ingrese la coordenada x: ";
+    cin >> x;
+    cout << "Ingrese la coordenada y: ";
+    cin >> y;
+    cout << "Ingrese la coordenada z: ";
+    cin >> z;
+    
+    // Calculamos las coordenadas cilíndricas r, theta yz
+    r = sqrt(pow(x, 2) + pow(y, 2));
+    theta = atan2(y, x);
+    z_cilíndricas = z;
+    
+    // Imprimimos las coordenadas cilíndricas en radianes en la pantalla
+    cout << "Coordenadas cilindricas en radianes: (r, theta, z) = (" << r << ", " << theta << ", " << z_cilindricas << ")" << endl;
+    
+    devolver 0;
+}
