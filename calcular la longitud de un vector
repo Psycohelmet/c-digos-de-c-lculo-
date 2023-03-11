@@ -1,0 +1,27 @@
+#incluir <iostream>
+#include <cmath> // Necesitamos esta librería para usar la función sqrt()
+#include <vector> // Necesitamos esta librería para usar vectores
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    vector<doble> v(3);
+    longitud doble = 0;
+    
+    // Pedimos al usuario que ingrese los elementos del vector v
+    cout << "Ingrese los elementos del vector v:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> v[i];
+    }
+    
+    // Calculamos la longitud del vector v
+    para(int i = 0; i < 3; i++) {
+        longitud += v[i] * v[i];
+    }
+    longitud = sqrt(longitud);
+    
+    // Imprimimos el resultado en la pantalla
+    cout << "La longitud del vector v es: " << longitud << endl;
+    
+    devolver 0;
+}
