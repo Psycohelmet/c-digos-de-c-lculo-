@@ -1,0 +1,26 @@
+#incluir <iostream>
+#include <cmath> // Necesitamos esta librería para usar la función sqrt()
+
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    doble x1, y1, x2, y2, distancia;
+    
+    // Pedimos al usuario que ingrese las coordenadas de los dos puntos
+    cout << "Ingrese la coordenada x del primer punto: ";
+    cn >> x1;
+    cout << "Ingrese la coordenada y del primer punto: ";
+    cin >> y1;
+    cout << "Ingrese la coordenada x del segundo punto: ";
+    cn >> x2;
+    cout << "Ingrese la coordenada y el segundo punto: ";
+    cin >> y2;
+    
+    // Calculamos la distancia usando la fórmula correspondiente
+    distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    
+    // Imprimimos la distancia entre los dos puntos en la pantalla
+    cout << "La distancia entre los dos puntos es: " << distancia << endl;
+    
+    devolver 0;
+}
