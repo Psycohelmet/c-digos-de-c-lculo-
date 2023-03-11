@@ -1,0 +1,32 @@
+#incluir <iostream>
+#include <vector> // Necesitamos esta librería para usar vectores
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    vector<doble> u(3), resultado(3);
+    k doble;
+    
+    // Pedimos al usuario que ingrese los elementos del vector uy la constante k
+    cout << "Ingrese los elementos del vector u:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> u[i];
+    }
+    cout << "Ingrese la constante k: ";
+    cin >> k;
+    
+    // Calculamos el producto k*u
+    para(int i = 0; i < 3; i++) {
+        resultado[i] = k * u[i];
+    }
+    
+    // Imprimimos el resultado en la pantalla
+    cout << "El resultado de k*u es: (";
+    para(int i = 0; i < 3; i++) {
+        cout <<resultado[i];
+        if(i != 2) cout << ", ";
+    }
+    cout << ")" << endl;
+    
+    devolver 0;
+}
