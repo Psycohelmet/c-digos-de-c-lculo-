@@ -1,0 +1,29 @@
+#incluir <iostream>
+#include <cmath> // Necesitamos esta librería para usar la función sin() y cos()
+
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    doble r, theta, z, x, y;
+    const doble pi = 3.14159265358979323846; // Definimos la constante pi
+    
+    // Pedimos al usuario que ingrese las coordenadas cilíndricas en grados
+    cout << "Ingrese la coordenada r: ";
+    cin >> r;
+    cout << "Ingrese la coordenada theta en grados: ";
+    cin >> theta;
+    cout << "Ingrese la coordenada z: ";
+    cin >> z;
+    
+    // Convertimos el angulo a radianes
+    theta = theta * pi / 180.0;
+    
+    // Calculamos las coordenadas rectangulares
+    x = r * cos(theta);
+    y = r * sin(theta);
+    
+    // Imprimimos las coordenadas rectangulares en la pantalla
+    cout << "Coordenadas rectangulares: (x, y, z) = (" << x << ", " << y << ", " << z << ")" << endl;
+    
+    devolver 0;
+}
