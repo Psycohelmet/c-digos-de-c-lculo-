@@ -1,0 +1,37 @@
+#incluir <iostream>
+#include <vector> // Necesitamos esta librería para usar vectores
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    vector<doble> u(3), v(3), w(3);
+    
+    // Pedimos al usuario que ingrese los elementos de los vectores uyv
+    cout << "Ingrese los elementos del vector u:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> u[i];
+    }
+    
+    cout << "Ingrese los elementos del vector v:" << endl;
+    para(int i = 0; i < 3; i++) {
+        cout << "Elemento " << i+1 << ": ";
+        cin >> v[i];
+    }
+    
+    // Calculamos el producto cruz entre los vectores uyv
+    w[0] = u[1]*v[2] - u[2]*v[1];
+    w[1] = u[2]*v[0] - u[0]*v[2];
+    w[2] = u[0]*v[1] - u[1]*v[0];
+    
+    // Imprimimos el resultado en la pantalla
+    cout << "El producto cruz entre los vectores uyv es: <";
+    para(int i = 0; i < 3; i++) {
+        cout << w[i];
+        si (yo < 2) {
+            cout << ", ";
+        }
+    }
+    cout << ">" << endl;
+    
+    devolver 0;
+}
