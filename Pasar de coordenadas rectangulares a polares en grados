@@ -1,0 +1,28 @@
+#incluir <iostream>
+#include <cmath> // Necesitamos esta librería para usar la función atan2()
+
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    doble x, y, r, theta;
+    
+    // Pedimos al usuario que ingrese las coordenadas rectangulares x, y
+    cout << "Ingrese la coordenada x: ";
+    cin >> x;
+    cout << "Ingrese la coordenada y: ";
+    cin >> y;
+    
+    // Calculamos la distancia r usando el teorema de Pitágoras
+    r = sqrt(pow(x, 2) + pow(y, 2));
+    
+    // Calculamos el angulo theta en radianes usando la funcion atan2()
+    theta = atan2(y, x);
+    
+    // Convertimos el angulo theta de radianes a grados
+    theta = theta * 180 / M_PI;
+    
+    // Imprimimos las coordenadas polares r, theta en grados
+    cout << "Coordenadas polares en grados: (" << r << ", " << theta << "°)" << endl;
+    
+    devolver 0;
+}
