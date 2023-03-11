@@ -1,0 +1,25 @@
+#incluir <iostream>
+
+utilizando el espacio de nombres estándar;
+
+int principal() {
+    doble x1, y1, x2, y2, m;
+    
+    // Pedimos al usuario que ingrese las coordenadas de los dos puntos
+    cout << "Ingrese la coordenada x del primer punto: ";
+    cn >> x1;
+    cout << "Ingrese la coordenada y del primer punto: ";
+    cin >> y1;
+    cout << "Ingrese la coordenada x del segundo punto: ";
+    cn >> x2;
+    cout << "Ingrese la coordenada y el segundo punto: ";
+    cin >> y2;
+    
+    // Calculamos el pendiente usando la fórmula correspondiente
+    m = (y2 - y1) / (x2 - x1);
+    
+    // Imprimimos el pendiente de la recta en la pantalla
+    cout << "La pendiente de la recta es: " << m << endl;
+    
+    devolver 0;
+}
