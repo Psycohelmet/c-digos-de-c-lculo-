@@ -1,0 +1,22 @@
+#incluir <iostream>
+#incluir <matemáticas>
+
+utilizando el espacio de nombres estándar;
+
+int principal()
+{
+    flotante r, theta, x, y;
+    
+    cout << "Introduce el valor de r: ";
+    cin >> r;
+    
+    cout << "Introduce el valor de theta en radianes: ";
+    cin >> theta;
+    
+    x = r * cos(theta);
+    y = r * sin(theta);
+    
+    cout << "Las coordenadas rectangulares son: (" << x << ", " << y << ")" << endl;
+    
+    devolver 0;
+}
