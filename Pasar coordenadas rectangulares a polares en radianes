@@ -1,0 +1,22 @@
+#incluir <iostream>
+#incluir <matemáticas>
+
+utilizando el espacio de nombres estándar;
+
+int principal()
+{
+    flotante x, y, r, theta;
+    
+    cout << "Introducir el valor de x: ";
+    cin >> x;
+    
+    cout << "Introduce el valor de y: ";
+    cin >> y;
+    
+    r = sqrt(x*x + y*y);
+    theta = atan2(y, x);
+    
+    cout << "Las coordenadas polares son: (" << r << ", " << theta << " rad)" << endl;
+    
+    devolver 0;
+}
