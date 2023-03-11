@@ -1,0 +1,18 @@
+#incluir <iostream>
+#incluir <matemáticas>
+
+utilizando el espacio de nombres estándar;
+
+int principal()
+{
+    float grados, radianes;
+    
+    cout << "Introduce el valor en grados: ";
+    cin >> grados;
+    
+    radianes = grados * M_PI / 180,0;
+    
+    cout << grados << " grados son " << radianes << " radianes." << finl;
+    
+    devolver 0;
+}
